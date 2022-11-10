@@ -10,6 +10,8 @@ export const CSSReset = createGlobalStyle`
   body {
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: ${({ theme }) => theme.backgroundBase};
+    color: ${({ theme }) => theme.textColorBase};
   }
   /* NextJS */
   html {
